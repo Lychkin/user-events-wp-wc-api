@@ -1,0 +1,43 @@
+# Python
+venv/
+.venv/
+env/
+.env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+
+# IDEs
+.vscode/
+
+# Environment
+.env
+*.env
+
+# Data
+data/
+dataset/
+datasets/
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.hdf5
+*.npz
+*.npy
+
+# Logs
+*.log
+
+# Database
+db.sqlite3
+*.db
+db
+*.sqlite
+*.sqlite3
+
+# Sandbox
+sandbox/
