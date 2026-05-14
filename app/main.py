@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 import uvicorn
 
-from core.config import settings
-from database import Base, engine
-from routers import events
+from app.core.config import settings
+from app.database import Base, engine
+from app.routers import events
 
 # создаём таблицы
 Base.metadata.create_all(bind=engine)
@@ -20,4 +20,6 @@ def root():
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host=settings.host, port=settings.port, reload=True)
+    uvicorn.run(
+        "app.main:app", host=settings.host, port=settings.port, reload=True
+    )

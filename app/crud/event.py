@@ -1,8 +1,8 @@
 from sqlalchemy.orm import Session
 from datetime import datetime, UTC
 
-from models.event import UserEvent
-from schemas.event import EventCreate
+from app.models.event import UserEvent
+from app.schemas.event import EventCreate
 
 
 def create_event(db: Session, event: EventCreate):

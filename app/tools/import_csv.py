@@ -1,12 +1,14 @@
-# Скрипт который будет загружать данные из CSV в БД sqlite events.db
-# Удобно, когда нужно быстро наполнить базу данных
+"""
+Скрипт который будет загружать данные из CSV в БД sqlite events.db
+Удобно, когда нужно быстро наполнить базу данных
+"""
 
 import csv
 from datetime import datetime
 from pathlib import Path
 
-from models.event import UserEvent
-from database import engine, Base, SessionLocal
+from app.models.event import UserEvent
+from app.database import engine, Base, SessionLocal
 
 # создаём таблицу если её нет
 Base.metadata.create_all(bind=engine)

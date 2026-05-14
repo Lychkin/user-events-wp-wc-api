@@ -56,7 +56,7 @@ pip install -r requirements.txt
 # Запуск сервиса
 
 ```bash
-py main.py
+py -m app.main
 ```
 
 После запуска сервис будет доступен по адресу:
